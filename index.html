@@ -38,5 +38,17 @@
 
     <p><sup>[1]</sup> Source: <a href="https://www.google.com/">"The Exercise Effect: Mental Health Benefits of Physical Activity"</a></p>
 
+    <script>
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+      });
+    
+      document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73) || (e.ctrlKey && e.keyCode == 85)) {
+          e.preventDefault();
+        }
+      });
+    </script>
+
 </body>
 </html>
